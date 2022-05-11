@@ -17,5 +17,5 @@ struct To_Do_List
 {
 	int id;
 	string name;
-	ToDoItem toDoItems[];
+	ToDoItem* toDoItems;
 };
