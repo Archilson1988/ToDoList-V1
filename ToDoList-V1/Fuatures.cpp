@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Header.h"
 =======
 #include "Header.h"
@@ -116,3 +117,13 @@ To_Do_List DelToDoItem(To_Do_List userToDoList, int number)
 =======
 }
 >>>>>>> features/3-change-function
+=======
+#include "Header.h"
+
+To_Do_List cleanToDoList(To_Do_List userTo_Do_List)
+{
+	delete[] userTo_Do_List.toDoItems;
+
+	return userTo_Do_List;
+}
+>>>>>>> features/4-clean-list-function
