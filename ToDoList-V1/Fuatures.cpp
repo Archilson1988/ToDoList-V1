@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-#include "Header.h"
-=======
-#include "Header.h"
-
 #include "Header.h"
 
 To_Do_List addToDoList(int id, string name)
@@ -41,8 +33,10 @@ To_Do_List addToDoList(int id, string name)
 		counter++;
 
 		cout << "Add new item(1) or comlete(0) ?" << endl;
-=======
-#include "Header.h"
+	}
+}
+
+
 
 To_Do_List changeToDoList(To_Do_List userToDoList)
 {
@@ -64,16 +58,13 @@ To_Do_List changeToDoList(To_Do_List userToDoList)
 		cin >> userToDoList.toDoItems[choise - 1].budget;
 
 		cout << "Enter id item for change or enter '0' to comlete." << endl;
->>>>>>> features/3-change-function
 		cin >> choise;
 	}
 
 	return userToDoList;
-<<<<<<< HEAD
 }
->>>>>>> features/1-add-function
-=======
-#include "Header.h"
+
+
 
 To_Do_List DelToDoItem(To_Do_List userToDoList, int number)
 {
@@ -113,12 +104,8 @@ To_Do_List DelToDoItem(To_Do_List userToDoList, int number)
 
 	return newUserToDoList;
 }
->>>>>>> origin/features/2-del-function
-=======
-}
->>>>>>> features/3-change-function
-=======
-#include "Header.h"
+
+
 
 To_Do_List cleanToDoList(To_Do_List userTo_Do_List)
 {
@@ -126,4 +113,3 @@ To_Do_List cleanToDoList(To_Do_List userTo_Do_List)
 
 	return userTo_Do_List;
 }
->>>>>>> features/4-clean-list-function

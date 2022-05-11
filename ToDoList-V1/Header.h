@@ -19,3 +19,11 @@ struct To_Do_List
 	string name;
 	ToDoItem* toDoItems;
 };
+
+To_Do_List addToDoList(int, string);
+
+To_Do_List changeToDoList(To_Do_List);
+
+To_Do_List DelToDoItem(To_Do_List, int);
+
+To_Do_List cleanToDoList(To_Do_List);
