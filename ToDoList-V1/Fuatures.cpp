@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "Header.h"
 =======
 #include "Header.h"
@@ -39,10 +40,35 @@ To_Do_List addToDoList(int id, string name)
 		counter++;
 
 		cout << "Add new item(1) or comlete(0) ?" << endl;
+=======
+#include "Header.h"
+
+To_Do_List changeToDoList(To_Do_List userToDoList)
+{
+	int choise = 0;
+	cout << "Enter id item for change or enter '0' to comlete." << endl;
+
+	while (choise != 0)
+	{
+		cout << "Change name of item: ";
+		cin >> userToDoList.toDoItems[choise - 1].name;
+
+		cout << "Change description of item: ";
+		cin >> userToDoList.toDoItems[choise - 1].description;
+
+		cout << "Change date of item: ";
+		cin >> userToDoList.toDoItems[choise - 1].date;
+
+		cout << "Change budget of item: ";
+		cin >> userToDoList.toDoItems[choise - 1].budget;
+
+		cout << "Enter id item for change or enter '0' to comlete." << endl;
+>>>>>>> features/3-change-function
 		cin >> choise;
 	}
 
 	return userToDoList;
+<<<<<<< HEAD
 }
 >>>>>>> features/1-add-function
 =======
@@ -87,3 +113,6 @@ To_Do_List DelToDoItem(To_Do_List userToDoList, int number)
 	return newUserToDoList;
 }
 >>>>>>> origin/features/2-del-function
+=======
+}
+>>>>>>> features/3-change-function
